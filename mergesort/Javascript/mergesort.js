@@ -1,5 +1,5 @@
 // https://www.geeksforgeeks.org/merge-sort/
-
+// https://en.wikipedia.org/wiki/Merge_sort
 
 function mergesort(array) {
 
@@ -20,7 +20,7 @@ function mergesort(array) {
 
     merge(leftArray, rightArray, array)
 
-    console.log('Final Sorted Array',array);
+    // console.log('Final Sorted Array',array);
     return array;
 }
 
@@ -52,6 +52,8 @@ function merge(leftArray, rightArray,array) {
         array[index++] = rightArray.shift();
 
     }
+
+    console.log("Merging " , array);
 }
 
 
