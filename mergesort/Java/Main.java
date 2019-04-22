@@ -31,8 +31,6 @@ class MergeSort{
         return array;
     }
     
-    // unfinished
-    
     void merge(int [] leftArray, int [] rightArray){
         int indexofleftarray = 0;
         int indexofrightarray = 0;
@@ -49,9 +47,20 @@ class MergeSort{
                 sortedArray[indexOfMergedList] = rightArray[indexofrightarray];
                 indexofrightarray++;
             }
-            
         }
     
+        while(indexofleftarray < leftArray.length){
+            sortedArray[indexOfMergedList] = leftArray[indexofleftarray];
+            indexofleftarray++;
+            indexOfMergedList++;        
+        }   
+        
+        while(indexofrightarray < rightArray.length){
+            sortedArray[indexOfMergedList] = rightArray[indexofrightarray];
+            indexofrightarray++;
+            indexOfMergedList++;        
+        }   
+        
         System.out.println(Arrays.toString(sortedArray));    
     }
 
