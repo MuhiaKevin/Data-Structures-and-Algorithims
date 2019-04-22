@@ -12,7 +12,7 @@ class MergeSort{
     int[] mergeSort(int [] array){
 
         // if array has one element then it is sorted
-        if(array.length <= 1){
+        if(array.length == 1){
             return array;
         }
 
@@ -30,6 +30,8 @@ class MergeSort{
 
         return array;
     }
+    
+    // unfinished
     
     void merge(int [] leftArray, int [] rightArray){
         int indexofleftarray = 0;
